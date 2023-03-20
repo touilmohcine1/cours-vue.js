@@ -1,0 +1,18 @@
+<div id="app">
+    <input type="submit" v-on:click="name_function">
+    <input type="submit" @click="name_function">
+</div>
+
+<script src="js/vue.js"></script>
+
+<script>
+    new Vue 
+    ({
+        el:'#app',
+        methods:{
+            name_function: function(){
+                alert("Welcome");
+            }
+        }
+    })
+</script>
